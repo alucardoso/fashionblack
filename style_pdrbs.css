@@ -1,0 +1,1885 @@
+/*250521V1*/
+
+@media only screen and (max-device-width: 1050px) {
+    .header {
+        width: 102%;
+    }
+
+    #searchBoxWrapper {
+        width: 102%;
+    }
+}
+
+body {
+    background-color: ;
+    background:
+        url("/custom/web/content/pdrbs_fondo_.jpeg") repeat-x,
+        0px 142px repeat-y;
+    background-size: cover;
+}
+
+body::after {
+    content: "";
+    background: url(/custom/web/content/pdrbs_fondo.jpeg) repeat-x,
+        0px 142px repeat-y;
+    background-size: cover;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#cont1-pqrs::after {
+    content: "";
+    background: black;
+    background-size: cover;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.headerWrapper {
+    background-color: ;
+    background:
+        url("/custom/web/content/pdrbs_biblioteca_header.jpg") repeat-x,
+        0px 142px repeat-y;
+    background-size: cover;
+
+}
+
+#content {
+    /*background-color: rgba(255, 255, 255, 0.4);*/
+    width: auto;
+    max-width: 99%;
+    background: ;
+}
+
+.nonmobile {
+    background: ;
+}
+
+.content_container {
+    background: none;
+    margin-top: -20px;
+}
+
+.menu_text {
+    color: #be1622;
+    opacity: 0.8;
+}
+
+.menu_link {
+    color: #be1622;
+    opacity: 0.8;
+    padding-left: 30px;
+}
+
+
+/*Incio rbs index*/
+.container-pdrbs {
+    overflow: hidden;
+    display: grid;
+    background: white;
+    padding: 6px;
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: 175px;
+    margin-right: 175px;
+    grid-gap: 6px;
+    grid-template-areas:
+        "opci1 opci1 opci1 opci2        opci2 opci2"
+        "opci3 opci3 central central    opci4 opci4"
+        "opci5 opci5 central central    opci6 opci6"
+        "opci7 opci7 central central    opci8 opci8"
+        "opci9 opci9 opci9  opci10      opci10 opci10"
+    ;
+    grid-template-rows: 138px 138px 136px 138px 138px;
+}
+
+#title1 {
+    grid-area: title1;
+}
+
+#title2 {
+    grid-area: title2;
+}
+
+#cont1 {
+    grid-area: opci1;
+}
+
+#cont2 {
+    grid-area: opci2;
+}
+
+#cont3 {
+    grid-area: opci3;
+}
+
+#cont4 {
+    grid-area: opci4;
+}
+
+#cont4 img {
+    object-position: bottom;
+}
+
+#cont5 {
+    grid-area: opci5;
+}
+
+#cont6 {
+    grid-area: opci6;
+}
+
+#cont7 {
+    grid-area: opci7;
+}
+
+#cont8 {
+    grid-area: opci8;
+}
+
+#cont9 {
+    grid-area: opci9;
+}
+
+#cont10 {
+    grid-area: opci10;
+}
+
+#cont_central {
+    grid-area: central;
+}
+
+#cont_central img {
+    object-position: ;
+}
+
+.container-item-pdrbs {
+    position: relative;
+}
+
+.container-item-pdrbs {
+    padding: 0px;
+    cursor: default;
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -ms-transition: 0.1s all;
+    transition: 0.1s all;
+}
+
+
+.container-img-pdrbs {
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container-text-pdrbs {
+    position: absolute;
+    top: 0;
+    color: white;
+    opacity: .85;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    height: 40px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.container-text-superior {
+    position: absolute;
+    top: 0;
+    color: white;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    height: 40px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: 20;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+/*Fin rbs index*/
+
+/*Inicio rbs colecciones*/
+
+.container-pdrbs-colec {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -15px;
+    margin-left: ;
+    margin-right: ;
+    grid-gap: 6px;
+    grid-template-areas:
+        "colectitle colectitle colectitle"
+        "colec1 colec2 colec4"
+        "colec1 colec2 colec4"
+        "colec1 colec2 colec5"
+        "colec1 colec3 colec5"
+        "colec1 colec3 colec6"
+        "colec1 colec3 colec6"
+    ;
+    grid-template-rows: 40px 78px 78px 78px 78px 78px 78px;
+}
+
+#title-colec {
+    grid-area: colectitle;
+}
+
+#cont1-colec {
+    grid-area: colec1
+}
+
+#cont2-colec {
+    grid-area: colec2
+}
+
+#cont3-colec {
+    grid-area: colec3
+}
+
+#cont4-colec {
+    grid-area: colec4
+}
+
+#cont5-colec {
+    grid-area: colec5;
+}
+
+#cont5-colec img {
+    object-position: bottom;
+}
+
+#cont6-colec {
+    grid-area: colec6
+}
+
+.container-item-colec {
+    position: relative;
+    padding: 0px;
+    cursor: default;
+}
+
+.container-img-pdrbs-colec {
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container-text-pdrbs-colec {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    opacity: 0.9;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 15px;
+    height: 60px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-text-pdrbs-colec-superior {
+    background: ;
+    position: absolute;
+    bottom: 0;
+    color: #be1622;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 35px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+/*Inicio rbs cultura*/
+
+.container-pdrbs-cultura {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -15px;
+    margin-left: ;
+    margin-right: ;
+    grid-gap: 6px;
+    grid-template-areas:
+        "colectitle2 colectitle2 colectitle2"
+        "colec1 colec2 colec4"
+        "colec1 colec3 colec4"
+    ;
+    grid-template-rows: 40px 255px 255px;
+}
+
+#title-cultura {
+    grid-area: colectitle2;
+}
+
+#cont1-cultura {
+    grid-area: colec1
+}
+
+#cont2-cultura {
+    grid-area: colec2
+}
+
+#cont3-cultura {
+    grid-area: colec3
+}
+
+#cont4-cultura {
+    grid-area: colec4
+}
+
+.container-item-cultura {
+    position: relative;
+    padding: 0px;
+    cursor: default;
+}
+
+.container-img-pdrbs-cultura {
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container-text-pdrbs-cultura {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    opacity: 0.9;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 15px;
+    height: 60px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-text-pdrbs-cultura-superior {
+    background: ;
+    position: absolute;
+    bottom: 0;
+    color: #be1622;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 35px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+/*Inicio rbs biblioteca*/
+
+.container-pdrbs-bibli {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*margin-top: -15px;*/
+    margin-left: ;
+    margin-right: ;
+    grid-gap: 6px;
+    grid-template-areas:
+        "bibli2 bibli3 bibli4"
+        "bibli1 bibli5 bibli6"
+        "bibli1 bibli7 bibli8"
+        "bibli9 bibli10 bibli11"
+        "bibli12 bibli13 bibli14"
+    ;
+    grid-template-rows: 165px 165px 165px 165px 165px;
+}
+
+#cont1-bibli {
+    grid-area: bibli1
+}
+
+#cont2-bibli {
+    grid-area: bibli2
+}
+
+#cont3-bibli {
+    grid-area: bibli3
+}
+
+#cont4-bibli {
+    grid-area: bibli4
+}
+
+#cont5-bibli {
+    grid-area: bibli5
+}
+
+#cont6-bibli {
+    grid-area: bibli6
+}
+
+#cont7-bibli {
+    grid-area: bibli7
+}
+
+#cont8-bibli {
+    grid-area: bibli8
+}
+
+#cont9-bibli {
+    grid-area: bibli9
+}
+
+#cont10-bibli {
+    grid-area: bibli10
+}
+
+#cont11-bibli {
+    grid-area: bibli11
+}
+
+#cont12-bibli {
+    grid-area: bibli12
+}
+
+#cont13-bibli {
+    grid-area: bibli13
+}
+
+#cont14-bibli {
+    grid-area: bibli14
+}
+
+.container-item-pdrbs-bibli {
+    position: relative;
+    padding: 0px;
+    cursor: default;
+    overflow: hidden;
+    background: white;
+}
+
+#cont1-bibli {
+    background: none;
+}
+
+.img-pdrbs-bibli {
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.container-text-pdrbs-bibli {
+    position: absolute;
+    top: 0;
+    color: white;
+    opacity: 0.7;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 50%;
+    margin: 0px;
+    text-align: center;
+    font-size: 15px;
+    height: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-text-pdrbs-bibli-superior {
+    background: ;
+    position: absolute;
+    bottom: 0;
+    color: #be1622;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 35px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+/********************** Animacion Hover ***********************/
+
+.container-item-pdrbs-bibli:hover .container-text-pdrbs-bibli {
+    width: 100%;
+    transition: 300ms;
+    opacity: 0.9;
+}
+
+.container-item-pdrbs-bibli:not(:hover) .container-text-pdrbs-bibli {
+    width: 50%;
+    transition: 500ms;
+}
+
+/*Inicio rbs base de datos*/
+
+.container-pdrbs-db {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: -15px;
+    margin-left: ;
+    margin-right: ;
+    grid-gap: 6px;
+    grid-template-areas:
+        "titledb titledb titledb titledb"
+        "titledbizq titledbizq titledbder titledbder"
+        "db4 db5 db6 db6"
+        "db7 db8 db9 db10"
+        "db11 db12 db9 db10"
+    ;
+    grid-template-rows: 40px 50px 200px 200px 200px;
+}
+
+
+#cont1-db {
+    grid-area: titledb
+}
+
+#cont2-db {
+    grid-area: titledbizq
+}
+
+#cont3-db {
+    grid-area: titledbder
+}
+
+#cont4-db {
+    grid-area: db4
+}
+
+#cont5-db {
+    grid-area: db5
+}
+
+#cont6-db {
+    grid-area: db6
+}
+
+#cont7-db {
+    grid-area: db7
+}
+
+#cont8-db {
+    grid-area: db8
+}
+
+#cont9-db {
+    grid-area: db9
+}
+
+#cont10-db {
+    grid-area: db10
+}
+
+#cont11-db {
+    grid-area: db11
+}
+
+#cont12-db {
+    grid-area: db12
+}
+
+.container-item-pdrbs-db {
+    position: relative;
+    padding: 0px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.img-pdrbs-db {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-text-pdrbs-db {
+    position: absolute;
+    top: 0;
+    color: white;
+    opacity: 0.9;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 17px;
+    height: 60px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-text-pdrbs-db-superior {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    opacity: 0.9;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 35px;
+    height: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*Inicio rbs Informacion Organizacional*/
+
+.container-pdrbs-info {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -15px;
+    margin-left: ;
+    margin-right: ;
+    grid-gap: 6px;
+    grid-template-areas:
+        "titleinfo titleinfo"
+        "info1 info3"
+        "info1 info3"
+        "info1 info4"
+        "info2 info4"
+        "info2 info5"
+        "info2 info5"
+    ;
+    grid-template-rows: 40px 80px 80px 80px 80px 80px 80px;
+}
+
+@media only screen and (min-device-width: 1500px) {
+    .container-pdrbs-info {
+        margin-left: -190px;
+        margin-right: -190px;
+    }
+}
+
+#title-info {
+    grid-area: titleinfo
+}
+
+#cont1-info {
+    grid-area: info1
+}
+
+#cont2-info {
+    grid-area: info2
+}
+
+#cont3-info {
+    grid-area: info3
+}
+
+#cont4-info {
+    grid-area: info4
+}
+
+#cont5-info {
+    grid-area: info5
+}
+
+.container-item-pdrbs-info {
+    position: relative;
+    padding: 0px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.img-pdrbs-info {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-text-pdrbs-info {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    opacity: 0.9;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 15px;
+    height: 60px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-text-pdrbs-info-superior {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    opacity: 0.9;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 35px;
+    height: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*Inicio rbs enlaces Salesianos*/
+
+.container-pdrbs-enla {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: -15px;
+    margin-left: ;
+    margin-right: ;
+    grid-gap: 6px;
+    grid-template-areas:
+        "title-enla title-enla title-enla title-enla"
+        "cont1-enla cont1-enla cont2-enla cont2-enla"
+        "cont3-enla cont3-enla cont3-enla cont3-enla"
+
+    ;
+    grid-template-rows: 40px 300px 300px;
+}
+
+#title-enla {
+    grid-area: title-enla;
+}
+
+#cont1-enla {
+    grid-area: cont1-enla;
+}
+
+#cont2-enla {
+    grid-area: cont2-enla;
+}
+
+#cont3-enla {
+    grid-area: cont3-enla;
+}
+
+.container-item-enla {
+    position: relative;
+    padding: 0px;
+    cursor: default;
+}
+
+.img-pdrbs-enla {
+    overflow: hidden;
+}
+
+.container-text-pdrbs-enla-superior {
+    background: ;
+    position: absolute;
+    bottom: 0;
+    color: #be1622;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 30px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+/*Inicio rbs Repositorio Institucional*/
+
+.container-pdrbs-repo {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -15px;
+    margin-left: ;
+    margin-right: ;
+    grid-gap: 6px;
+    grid-template-areas:
+        "titlerepo titlerepo titlerepo"
+        "repo1 repo2 repo2"
+        "repo1 repo3 repo3"
+
+    ;
+    grid-template-rows: 40px 252px 252px;
+}
+
+#title-repo {
+    grid-area: titlerepo
+}
+
+#cont1-repo {
+    grid-area: repo1
+}
+
+#cont2-repo {
+    grid-area: repo2
+}
+
+#cont3-repo {
+    grid-area: repo3
+}
+
+.container-item-pdrbs-repo {
+    position: relative;
+    padding: 0px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.img-pdrbs-repo {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-text-pdrbs-repo {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    opacity: 0.9;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 15px;
+    height: 60px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-text-pdrbs-repo-superior {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    opacity: 0.9;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 30px;
+    height: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*Inicio rbs Servicios de Apoyo*/
+
+.container-pdrbs-servi {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -15px;
+    margin-left: ;
+    margin-right: ;
+    grid-gap: 6px;
+    grid-template-areas:
+        "titleservi titleservi titleservi"
+        "servi1 servi1 servi3"
+        "servi2 servi2 servi3"
+
+    ;
+    grid-template-rows: 40px 252px 252px;
+}
+
+
+#title-servi {
+    grid-area: titleservi
+}
+
+#cont1-servi {
+    grid-area: servi1
+}
+
+#cont2-servi {
+    grid-area: servi2
+}
+
+#cont3-servi {
+    grid-area: servi3
+}
+
+.container-item-pdrbs-servi {
+    position: relative;
+    padding: 0px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.img-pdrbs-servi {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-text-pdrbs-servi {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    opacity: 0.9;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 15px;
+    height: 60px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-text-pdrbs-servi-superior {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    opacity: 0.9;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 30px;
+    height: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*Inicio rbs Preguntas frecuentes*/
+
+.container-pdrbs-preguntas {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -15px;
+    margin-left: ;
+    margin-right: ;
+    grid-gap: 6px;
+    grid-template-areas:
+        "titlepreguntas titlepreguntas titlepreguntas"
+
+    ;
+    grid-template-rows: 40px 252px 252px;
+}
+
+
+#title-preguntas {
+    grid-area: titlepreguntas;
+}
+
+.container-item-pdrbs-preguntas {
+    position: relative;
+    padding: 0px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.img-pdrbs-preguntasi {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-text-pdrbs-preguntas {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    opacity: 0.9;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 15px;
+    height: 60px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-text-pdrbs-preguntas-superior {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    opacity: 0.9;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 30px;
+    height: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*Inicio rbs Pqrs*/
+
+.container-pdrbs-pqrs {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -15px;
+    margin-left: ;
+    margin-right: ;
+    grid-gap: 6px;
+    grid-template-areas:
+        "titlepqrs titlepqrs titlepqrs"
+        "pqrs1 pqrs1 pqrs1"
+
+    ;
+    grid-template-rows: 40px 500px;
+}
+
+
+#title-pqrs {
+    grid-area: titlepqrs
+}
+
+#cont1-pqrs {
+    grid-area: pqrs1
+}
+
+.container-item-pdrbs-pqrs {
+    position: relative;
+    padding: 0px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.img-pdrbs-pqrs {
+    overflow: hidden;
+    object-fit: cover;
+    float: right;
+}
+
+.container-text-pdrbs-pqrs {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    opacity: 0.9;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 15px;
+    height: 60px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-text-pdrbs-pqrs-superior {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    opacity: 0.9;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 35px;
+    height: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*Inicio rbs Revistas*/
+
+.container-pdrbs-revistas {
+    text-align: center;
+    background: #f39200;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0px;
+    grid-gap: 6px;
+    grid-template-areas:
+        "titlerevistas"
+        "revistas1"
+
+    ;
+    grid-template-rows: 40px 500px;
+    width: 40%;
+    margin-bottom: 100px;
+    margin-left: 30%;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+
+#title-revistas {
+    grid-area: titlerevistas
+}
+
+#cont1-revistas {
+    grid-area: revistas1
+}
+
+.container-item-pdrbs-revistas {
+    position: relative;
+    padding: 0px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.img-pdrbs-revistas {
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+.container-text-pdrbs-revistas {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    opacity: 0.9;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 15px;
+    height: 60px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-text-pdrbs-revistas-superior {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    opacity: 0.9;
+    /*background: linear-gradient(rgba(88, 88, 88, 0.5), rgba(0, 0, 0, 0.5));*/
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-size: 35px;
+    height: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*    Diseño Responsive    */
+
+@media only screen and (max-device-width: 1024px) {
+
+    .contentColumn.bgcolor-white.bcolor {
+        background: none;
+    }
+
+    .container-pdrbs {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 6px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 6px;
+        grid-template-areas:
+            "opci1 opci2"
+            "opci3 opci3"
+            "opci4 opci5"
+            "central opci7"
+            "central opci8"
+            "opci6 opci6"
+            "opci9 opci9"
+            "opci10 opci10"
+        ;
+        grid-template-rows: 140px 140px 140px 120px 120px 140px 140px 140px;
+    }
+
+    .container-text-pdrbs {
+        height: 50px;
+        font-size: 18px;
+    }
+
+
+    /***********************Colec*********************/
+
+    .container-pdrbs-colec {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 7px;
+        grid-gap: 6px;
+        grid-template-areas:
+            "colectitle colectitle"
+            "colec1 colec2"
+            "colec3 colec3"
+            "colec4 colec5"
+            "colec6 colec6"
+        ;
+        grid-template-rows: 40px 140px 140px 140px 140px;
+    }
+
+    .container-text-pdrbs-colec {
+        font-size: 18px;
+        height: 50px;
+        margin-bottom: 0px;
+    }
+
+    .container-text-pdrbs-colec-superior {
+        font-size: 25px;
+    }
+
+    /******************Bibli********************/
+
+    .container-pdrbs-bibli {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+        grid-gap: 6px;
+        grid-template-areas:
+            "bibli2 bibli3"
+            "bibli4 bibli5"
+            "bibli1 bibli11"
+            "bibli1 bibli12"
+            "bibli1 bibli7"
+            "bibli8 bibli9"
+            "bibli10 bibli13"
+            "bibli14 bibli6"
+        ;
+        grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px;
+    }
+    
+    #cont1-bibli{
+        margin-top: 50px;
+    }
+
+    .container-text-pdrbs-bibli {
+        font-size: 10px;
+    }
+
+    /****************Enlaces********************/
+
+    .container-pdrbs-enla {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 7px;
+        margin-left: ;
+        margin-right: ;
+        grid-gap: 6px;
+        grid-template-areas:
+            "title-enla"
+            "cont1-enla"
+            "cont2-enla"
+            "cont3-enla"
+        ;
+        grid-template-rows: 40px 190px 190px 190px;
+    }
+
+    .container-text-pdrbs-enla-superior {
+        font-size: 25px;
+    }
+
+    /*Inicio rbs base de datos*/
+
+    .container-pdrbs-db {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 15px;
+        margin-left: ;
+        margin-right: ;
+        grid-gap: 6px;
+        grid-template-areas:
+            "titledb titledb"
+            "titledbizq titledbizq"
+            "db4 db4"
+            "db5 db7"
+            "db12 db12"
+            "db11 db8"
+            "titledbder titledbder"
+            "db6 db6"
+            "db9 db10"
+        ;
+        grid-template-rows: 40px 50px 220px 140px 200px 140px 50px 140px 140px;
+    }
+
+    #cont9-db img {
+        margin-bottom: -159px;
+    }
+
+    #cont10-db img {
+        margin-bottom: -159px;
+    }
+
+    #cont12-db img {
+        margin-bottom: -200px;
+    }
+
+    .container-text-pdrbs-db {
+        font-size: 15px;
+        height: 60px;
+    }
+
+    .container-text-pdrbs-db-superior {
+        font-size: 20px;
+    }
+
+    /**********Info***************/
+
+    .container-pdrbs-info {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10px;
+        margin-left: ;
+        margin-right: ;
+        grid-gap: 6px;
+        grid-template-areas:
+            "titleinfo titleinfo"
+            "info1 info2"
+            "info5 info3"
+            "info4 info4"
+        ;
+        grid-template-rows: 40px 170px 170px 170px;
+    }
+
+    .container-text-pdrbs-info {
+        font-size: 15px;
+        height: 60px;
+    }
+
+    .container-text-pdrbs-info-superior {
+        font-size: 20px;
+    }
+
+    /****************preguntas****************/
+
+    .container-pdrbs-preguntas {
+        margin-top: 10px;
+    }
+    
+    .container-text-pdrbs-preguntas-superior {
+        font-size: 20px;
+    }
+
+    /********************Servi*****************/
+
+    .container-pdrbs-servi {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10px;
+        margin-left: ;
+        margin-right: ;
+        grid-gap: 6px;
+        grid-template-areas:
+            "titleservi titleservi"
+            "servi1 servi1"
+            "servi2 servi2"
+            "servi3 servi3"
+
+        ;
+        grid-template-rows: 40px 150px 150px 150px;
+    }
+
+
+
+    .container-text-pdrbs-servi {
+        font-size: 15px;
+    }
+
+    .container-text-pdrbs-servi-superior {
+        font-size: 20px;
+    }
+
+    /*******************Repo*********************/
+
+    .container-pdrbs-repo {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10px;
+        margin-left: ;
+        margin-right: ;
+        grid-gap: 6px;
+        grid-template-areas:
+            "titlerepo titlerepo"
+            "repo1 repo1"
+            "repo2 repo2"
+            "repo3 repo3"
+
+        ;
+        grid-template-rows: 40px 170px 170px 170px;
+    }
+
+    .container-text-pdrbs-repo {
+        font-size: 15px;
+    }
+
+    .container-text-pdrbs-repo-superior {
+        font-size: 20px;
+    }
+
+    /******************Cultura********************/
+
+    .container-pdrbs-cultura {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 0px;
+        margin-left: ;
+        margin-right: ;
+        grid-gap: 6px;
+        grid-template-areas:
+            "colectitle2 colectitle2"
+            "colec3 colec4"
+            "colec1 colec4"
+            "colec2 colec2"
+        ;
+        grid-template-rows: 40px 150px 150px 180px;
+    }
+
+    .container-text-pdrbs-cultura {
+        font-size: 15px;
+    }
+
+    .container-text-pdrbs-cultura-superior {
+        font-size: 20px;
+    }
+
+    /********************PQRS***********************/
+
+    .container-pdrbs-pqrs {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 10px;
+        margin-left: ;
+        margin-right: ;
+        grid-gap: 6px;
+        grid-template-areas:
+            "titlepqrs titlepqrs titlepqrs"
+            "pqrs1 pqrs1 pqrs1"
+
+        ;
+        grid-template-rows: 40px 210px;
+    }
+
+    .container-text-pdrbs-pqrs {
+        font-size: 15px;
+    }
+
+    .container-text-pdrbs-pqrs-superior {
+        font-size: 20px;
+    }
+
+
+
+
+}
+
+/*Fin responsive*/
+
+@media only screen and (min-device-width: 1500px) {
+    .container-pdrbs-info {
+        margin-left: -190px;
+        margin-right: -190px;
+    }
+}
+
+@media only screen and (min-device-width: 1500px) {
+    .container-pdrbs-db {
+        margin-left: 240px;
+        margin-right: 240px;
+    }
+
+    .container-pdrbs {
+        overflow: hidden;
+        display: grid;
+        background: white;
+        padding: 6px;
+        grid-template-columns: repeat(6, 1fr);
+        margin-left: 240px;
+        margin-right: 240px;
+        grid-gap: 6px;
+        grid-template-areas:
+            "opci1 opci1 opci1 opci2        opci2 opci2"
+            "opci3 opci3 central central    opci4 opci4"
+            "opci5 opci5 central central    opci6 opci6"
+            "opci7 opci7 central central    opci8 opci8"
+            "opci9 opci9 opci9  opci10      opci10 opci10"
+        ;
+        grid-template-rows: 200px 200px 201px 201px 200px;
+    }
+}
+
+
+
+
+
+
+/*-----------------Slider--------------------*/
+
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+
+    15% {
+        left: 0%;
+    }
+
+    20% {
+        left: -100%;
+    }
+
+    35% {
+        left: -100%;
+    }
+
+    40% {
+        left: -200%;
+    }
+
+    55% {
+        left: -200%;
+    }
+
+    60% {
+        left: -300%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    80% {
+        left: -400%;
+    }
+
+    95% {
+        left: -400%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+figure {
+    margin: 0;
+}
+
+div#feature-gallery {
+    width: auto;
+    overflow: hidden;
+}
+
+figure.slider-pdrbs {
+    position: relative;
+    width: 500%;
+    font-size: 0;
+    animation: 20s slidy infinite;
+}
+
+figure.slider-pdrbs figure {
+    width: 20%;
+    display: inline-block;
+    position: inherit;
+}
+
+figure.slider-pdrbs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#feature-gallery:hover figure.slider-pdrbs {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+/*-------------------------------Animate-------------------------------*/
+
+@charset "UTF-8";
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Daniel Eden
+*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown
+}
+
+
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp
+}
+
+/****************************  Zoom  ***********************************/
+
+
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn
+}

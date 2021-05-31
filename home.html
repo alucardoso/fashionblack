@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xml:lang="es" lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <style>
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            border-top: 1px solid red;
+            background: white;
+            color: #333;
+            height: 100vh;
+            width: 100%;
+            font-family: 'Lobster', cursive;
+            text-align: center
+        }
+
+        .estatico {
+            height: 80px;
+            width: 100%;
+            background: #333;
+            color: white;
+            text-align: center
+        }
+
+        .contenido {
+            height: 2000px;
+            width: 100%;
+            padding-top: 20px
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0
+        }
+    </style>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        
+        
+        posicionarMenu();
+
+        $(window).scroll(function() {
+            alert('hola');
+            posicionarMenu();
+        });
+
+        function posicionarMenu() {
+            var altura_del_header = $('.header').outerHeight(true);
+            var altura_del_menu = $('.estatico').outerHeight(true);
+
+            if ($(window).scrollTop() >= altura_del_header) {
+                $('.estatico').addClass('fixed');
+                $('.contenido').css('margin-top', (altura_del_menu) + 'px');
+            } else {
+                $('.estatico').removeClass('fixed');
+                $('.contenido').css('margin-top', '0');
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Texto principal</h1>
+        <h2>Texto secundario</h2>
+    </div>
+
+    <div class="estatico">Logo + Redes sociales</div>
+
+    <div class="contenido">wrapper, aquí va el contenido. HAZ SCROLL, VERÁS QUE NO HACE SALTO</div>
+
+
+
+</body></html>
